@@ -1,0 +1,12 @@
+$container: 1220;
+$padding: 30;
+$containerWithPadding: $container + ($padding * 2);
+
+$white: var(--white);
+$gray: var(--gray);
+$light-gray: var(--light-gray);
+$green: var(--green);
+$light-green: var(--light-green);
+
+$left-col-width: calc(41.73% - 15px);
+$right-col-width: 58.27%;

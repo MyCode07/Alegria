@@ -1,0 +1,135 @@
+.header {
+    position: relative;
+    z-index: 10;
+
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__body
+
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 14px 0;
+
+        @media (max-width: 600px) {
+            padding: 6px 0;
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 24px;
+
+        @media (max-width: 600px) {
+            left: 10px;
+        }
+
+        img,
+        svg {
+            width: 147px;
+
+            @media (max-width: 600px) {
+                width: 108px;
+            }
+        }
+    }
+
+    ._left {
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-right: 24px;
+
+        @media (max-width: 600px) {
+            padding-right: 10px;
+            justify-content: flex-end;
+        }
+    }
+
+    // .header__contacts
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+
+        width: 50%;
+        font-size: 15px;
+
+        @media (max-width: 1024px) {
+            width: 85%;
+        }
+
+        @media (max-width: 600px) {
+            width: auto;
+            margin-right: 22px;
+        }
+
+        & > :not(:last-child) {
+            margin-right: 15px;
+
+            @media (max-width: 600px) {
+                margin-right: 3px;
+            }
+        }
+
+        // .header__contacts-solcial
+
+        &-solcial {
+            & > :first-child {
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+
+            & > :last-child {
+                display: none;
+                width: 31px;
+                height: 31px;
+                flex: 0 0 auto;
+                border-radius: 50%;
+                background-color: $white;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 600px) {
+                    display: flex;
+                }
+
+                img,
+                svg {
+                    width: 15px;
+                }
+            }
+        }
+
+        // .header__contacts-phone
+
+        &-phone {
+            margin-left: auto;
+
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+
+    // .header__lang
+
+    &__lang {
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}

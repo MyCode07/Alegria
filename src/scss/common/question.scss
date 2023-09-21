@@ -1,0 +1,77 @@
+.question {
+    position: fixed;
+    z-index: 5;
+    top: 89vh;
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+
+    right: 50px;
+
+    @media (max-width: 1440px) {
+        right: 30px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 0;
+        background-color: #0a1b36;
+
+        span: {
+            display: none;
+        }
+        & > :last-child {
+            display: none;
+        }
+
+        svg {
+            position: relative;
+            top: 1.5px;
+            height: 16px;
+
+            fill: #fff;
+        }
+    }
+
+    @media (max-width: 768px) {
+        right: 15px;
+    }
+
+    svg {
+        height: 20px;
+    }
+
+    span {
+        display: block;
+        margin: 0 50px 0 10px;
+        color: #0a1b36;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 14px;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #0a1b36;
+
+            * {
+                color: #fff;
+                fill: #fff;
+            }
+        }
+    }
+}
