@@ -1,4 +1,5 @@
-import { Swiper, FreeMode, Thumbs, Manipulation, Mousewheel, Lazy, Pagination } from "swiper";
+import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
 
 const heroslider = document.querySelector('.hero .swiper');
 if (heroslider) {
@@ -14,4 +15,4 @@ if (heroslider) {
             type: "fraction",
         }
     })
-}
+} 

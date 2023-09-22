@@ -5,6 +5,7 @@
 @@include('./html/header.html')
 
 <main>
+
     <section class="hero">
         <div class="hero__container _container">
             <div class="hero__body">
@@ -101,6 +102,11 @@
                     </div>
                 </div>
                 <div class="resort-map">
+                    <picture>
+                        <source srcset="img/curort-map.png" media="(min-width: 601px)">
+                        <source srcset="img/curort-map-mb.png" media="(max-width: 600px)">
+                        <img src="img/curort-map.png" alt="">
+                    </picture>
 
                     <div class="resort-map__content _flex">
                         <div class="_left">
@@ -264,8 +270,8 @@
                 </div>
 
                 <div class="unique-actions">
-                    <div class="unique-action _lines">
-                        <div class="unique-action__top _flex">
+                    <div class="unique-action">
+                        <div class="section__top _flex">
                             <div class="_left">
                                 <p>Чем мы</p>
                             </div>
@@ -273,7 +279,7 @@
                                 <h3>Комплектуем виллы</h3>
                             </div>
                         </div>
-                        <div class="unique-action__contnet _flex">
+                        <div class="unique-action__contnet _flex _lines">
                             <div class="_left">
                                 <img src="img/complect.png" alt="">
                             </div>
@@ -328,7 +334,7 @@
                         </div>
                     </div>
                     <div class="unique-action _table">
-                        <div class="unique-action__top _flex">
+                        <div class="section__top _flex">
                             <div class="_left">
                                 <p>Пример расчета</p>
                             </div>
@@ -336,22 +342,18 @@
                                 <h3>Инвестиций</h3>
                             </div>
                         </div>
-                        <div class="unique-action__contnet _flex">
+                        <div class="section__descr _flex">
                             <div class="_left"></div>
                             <div class="_right">
-                                <div class="unique-action__contnet-text">
-                                    <div>
-                                        <p>Также мы можем дополнить вашу виллу дополнительными элементами. Пример текста
-                                            для инвесторов. Природная красота и особое
-                                            расположение Финестрата, близкое ко всему, неоспоримы; La Pinada Nature
-                                            Resort сочетает.</p>
-                                    </div>
-                                </div>
+                                <p>Также мы можем дополнить вашу виллу дополнительными элементами. Пример текста
+                                    для инвесторов. Природная красота и особое
+                                    расположение Финестрата, близкое ко всему, неоспоримы; La Pinada Nature
+                                    Resort сочетает.</p>
                             </div>
                         </div>
 
-                        <div class="unique-action__invest">
-                            <div class="unique-action__invest-head _flex">
+                        <div class="unique-invest">
+                            <div class="unique-invest__head _flex">
                                 <div class="_left">
                                     <div>
                                         <span class="heading">Тип аренды</span>
@@ -366,7 +368,7 @@
                                 </div>
                             </div>
 
-                            <div class="unique-action__invest-items">
+                            <div class="unique-invest__items">
                                 <div class="invest-item _flex">
                                     <div class="_left">
                                         <div>
@@ -393,6 +395,32 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="invest-item _flex">
+                                    <div class="_left">
+                                        <div>
+                                            <div class="invest-item__cell">
+                                                <span class="heading">Тип аренды</span>
+                                                <p>долгосрочная</p>
+                                            </div>
+                                            <div class="invest-item__cell">
+                                                <span class="heading">Стоимость виллы</span>
+                                                <p>€ 464 000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_right">
+                                        <div>
+                                            <div class="invest-item__cell">
+                                                <span class="heading">Выручка</span>
+                                                <p class="_price"><span>€ 19 900</span> / год</p>
+                                            </div>
+                                            <div class="invest-item__cell">
+                                                <span class="heading">ROI</span>
+                                                <p class="_roi">4,29%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -402,6 +430,252 @@
                         <span></span>
                         <span>получить консультацию</span>
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="locations">
+        <div class="section__container _container">
+            <div class="section__body">
+                <div class="location-image">
+                    <img src="img/location.png" alt="Локация">
+                    <h2>Локация</h2>
+                </div>
+                <div class="section__descr _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <p>Природная красота и особое расположение Финестрата, уникальны; La Pinada Nature Resort
+                            сочетает в себе аутентичность,
+                            предлагая при этом эксклюзивное и изысканное частное поместье, не имеющее аналогов на
+                            средиземноморском Белом побережье.
+                            <br><br>
+                            Располагается у подножия знаменитой горы Пуч Кампана, где доступны сотни пешеходных
+                            маршрутов. Настоящий рай для
+                            любителей спорта на открытом воздухе.
+                    </div>
+                </div>
+                <div class="location-circle _flex">
+                    <div class="_left">
+                        <img src="img/location-circle.svg" alt="">
+                    </div>
+                    <div class="_right"></div>
+                </div>
+                <div class="location-list _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <ol>
+                            <li>
+                                <label>10</label>
+                                <p>
+                                    <span>МИН</span>
+                                    Центр города
+                                </p>
+                            </li>
+                            <li>
+                                <label>20</label>
+                                <p>
+                                    <span>МИН</span>
+                                    La Marina молл
+                                </p>
+                            </li>
+                            <li>
+                                <label>30</label>
+                                <p>
+                                    <span>МИН</span>
+                                    Аэропорт
+                                </p>
+                            </li>
+                            <li>
+                                <label>5</label>
+                                <p>
+                                    <span>МИН</span>
+                                    Пляж Бенидорм
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="location-extra _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <p>Такие города как Финестрат, Полоп
+                            и Ла-Нусия, хранят традиции
+                            и гастрономию региона, обеспчивая основные услуги, школы, больницы и международный аэропорт.
+                        </p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <img src="img/location-map.png" alt="">
+                    <div class="location-map__icons">
+                        <button style="--order: 0">
+                            <div class="icon"></div>
+                            <span>City Hospital</span>
+                        </button>
+                        <button style="--order: 1">
+                            <div class="icon"></div>
+                            <span>Golf Badia</span>
+                        </button>
+                        <button style="--order: 2">
+                            <div class="icon"></div>
+                            <span>Centro Comrcial La Marina</span>
+                        </button>
+                        <button style="--order: 3">
+                            <div class="icon"></div>
+                            <span>School</span>
+                        </button>
+                        <button style="--order: 4">
+                            <div class="icon"></div>
+                            <span>Restaurants</span>
+                        </button>
+                        <button style="--order: 5">
+                            <div class="icon"></div>
+                            <span>Restaurants</span>
+                        </button>
+                        <button style="--order: 6">
+                            <div class="icon"></div>
+                            <span>School</span>
+                        </button>
+                        <button style="--order: 7">
+                            <div class="icon"></div>
+                            <span>School</span>
+                        </button>
+                        <button style="--order: 8">
+                            <div class="icon"></div>
+                            <span>Aqualandia</span>
+                        </button>
+                    </div>
+
+                    <a href="" target="_blank" class="_btn _btn-location">
+                        <span></span>
+                        <span>View map</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section__container _container">
+            <div class="section__body">
+                <div class="section__top _flex">
+                    <div class="_left">
+                        <p>Для тех кто любит</p>
+                    </div>
+                    <div class="_right">
+                        <h3>Спорт и треккинг</h3>
+                    </div>
+                </div>
+                <div class="section__descr _flex _lines">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <p>Природная красота и особое расположение Финестрата,неоспоримы; La Pinada Nature Resort
+                            сочетает в себе эту
+                            аутентичность, предлагая при этом эксклюзивное и изысканное частное поместье, не имеющее
+                            аналогов на средиземноморском
+                            Белом побережье.
+                            <br><br>
+                            Расположенная у подножия знаменитой горы Пуч Кампана, посетителям предлагаются сотни
+                            пешеходных маршрутов. Настоящий рай
+                            для любителей спорта на открытом воздухе.
+                        </p>
+                    </div>
+                </div>
+                <div class="section__image">
+                    <img src="img/sport.png" alt="">
+                </div>
+                <div class="section__descr _medium _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <p>Небольшой текст о сендеризме, тропах, велосипеде и активном отдыхе. La Nucia демонстрирует
+                            традиции и гастрономию этого
+                            региона
+                        </p>
+                    </div>
+                </div>
+                <div class="about-ticker">
+                    <div class="_ticker">
+                        <div class="_ticker-text">Живописный треккинг</div>
+                        <div class="_ticker-text">Живописный треккинг</div>
+                    </div>
+                    <div class="_flex">
+                        <div class="_left">
+                            <img src="img/ticker-1.png" alt="">
+                        </div>
+                        <div class="_right">
+                            <img src="img/ticker-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="section__descr  _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <p>Мы гордимся тем, что находимся в одном из самых живописных мест на всем средиземноморском
+                            побережье. Между горами и
+                            морем.
+                            <br><br>
+                            Множество природных троп пролегают через средиземноморский заботливо охраняемый лес,
+                            окружающий курорт Ла-Пинада. Тропы
+                            имеют несколько маршрутов, по которым можно пройти как пешком, так и на велосипеде.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="section__container _container">
+            <div class="section__body">
+                <div class="icons  _flex">
+                    <div class="_left">
+                        <div class="icon">
+                            <img src="img/icons/smile.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="_right">
+                        <div class="icon">
+                            <img src="img/icons/cards.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__top _flex">
+                    <div class="_left">
+                        <p>Наш</p>
+                    </div>
+                    <div class="_right">
+                        <h3>Сервис</h3>
+                    </div>
+                </div>
+                <div class="section__descr _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <h4>Сопровождение сделки</h4>
+                        <p>Наши юристы возьмут на себя весь процесс покупки: от открытия счета до переоформления
+                            счетов
+                            за коммунальные услуги для
+                            вас как собственника.
+                        </p>
+                    </div>
+                </div>
+                <div class="section__descr _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <h4>Оплата частями</h4>
+                        <p>При покупке недвижимости у застройщика на старте строительства оплата производится в
+                            несколько этапов. Последний платеж
+                            за переход права собственности на момент совершения сделки.</p>
+                    </div>
+                </div>
+                <div class="section__descr _flex">
+                    <div class="_left"></div>
+                    <div class="_right">
+                        <h4>Послепродажное обслуживание</h4>
+                        <p>Мы проконсультируем вас и ответим на любой вопрос, возникающий при переезде в Испанию, ее
+                            законы и обычаи, которые
+                            отличаются от тех, которые существуют в вашей стране.</p>
+                    </div>
                 </div>
             </div>
         </div>
