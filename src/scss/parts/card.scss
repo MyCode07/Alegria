@@ -11,6 +11,9 @@
     display: flex;
     align-items: flex-end;
 
+    position: sticky;
+    top: 0;
+
     @media (max-width: 600px) {
         height: 314px;
     }
@@ -186,10 +189,6 @@
 
                         @media (max-width: 690px) {
                             font-size: 22px;
-                        }
-
-                        sup {
-                            font-size: 0.5em;
                         }
                     }
                 }

@@ -179,7 +179,7 @@ h4 {
         position: relative;
         text-align: center;
         flex: 1 1 auto;
-        
+
         @media (max-width: 600px) {
             padding-right: 40px;
         }
@@ -216,4 +216,54 @@ h4 {
             background-image: url("@img/icons/location-fff.svg");
         }
     }
+
+    // ._btn-back
+
+    &-back {
+        color: #000;
+        background-color: #f7f6f2;
+
+        @media (max-width: 600px) {
+            width: 29px;
+            height: 29px;
+        }
+
+        & > :first-child {
+            background-color: $white;
+
+            @media (max-width: 600px) {
+                width: 29px;
+                height: 29px;
+            }
+
+            &:after {
+                background-color: $white;
+
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+        }
+
+        & > :first-child:before {
+            background-image: url("@img/icons/back.svg");
+
+            @media (max-width: 600px) {
+                background-image: url("@img/icons/back-mb.svg");
+
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            & > :nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+sup {
+    font-size: 0.5em;
 }

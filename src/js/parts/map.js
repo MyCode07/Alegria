@@ -1,20 +1,13 @@
+const locationsMap = document.querySelector('.location-map__content');
+const locations = document.querySelectorAll('.location-map__icons button');
 
-const locationsMap = document.querySelector('.location-map');
-
-if (window.innerWidth <= 600) {
+if (locationsMap && window.innerWidth <= 600)
     locationsMap.scrollTo(200, 0)
-}
 
-const locations = locationsMap.querySelectorAll('button');
-
-if (locations.length) {
+if (locations.length)
     locations.forEach(item => {
-        item.addEventListener('click', () => {
-
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log(e);
         })
     })
-}
-
-export const map = () => {
-
-}
