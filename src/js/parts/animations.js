@@ -21,7 +21,7 @@ function animate(elem) {
             x: 0,
             y: 0,
             ease: 'ease',
-            stagger: 0.3
+            stagger: 0.4
         });
     }
 }

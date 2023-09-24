@@ -18,15 +18,28 @@
         height: 314px;
     }
 
-    img {
+    // .villa-item__img
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
         z-index: -1;
-        border-radius: 3px;
+        pointer-events: none;
+
+        @media (max-width: 600px) {
+            pointer-events: all;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 3px;
+        }
     }
 
     // .villa-item__conent
@@ -46,6 +59,7 @@
             padding-top: 0;
             padding: 0 6px 15px 10px;
             display: flex;
+            pointer-events: none;
         }
 
         &:before {

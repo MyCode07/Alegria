@@ -1,6 +1,6 @@
 import "./parts/sliders.js";
 import "./parts/map.js";
-// import { maskInputs } from "./static/inputmask.js";
+import { maskInputs } from "./static/inputmask.js";
 import { runTicker } from "./static/ticker.js";
 import { toTop } from "./static/to-top.js";
 
@@ -14,4 +14,4 @@ animations();
 imageAnimation();
 toTop();
 runTicker()
-// maskInputs('+7 999 999 999 999', '.phone')
+maskInputs('+999-99-999-9999', '.phone')
