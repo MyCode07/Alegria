@@ -6,7 +6,7 @@
     }
 
     @media (max-width: 600px) {
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
 
     // .hero__container
@@ -90,9 +90,9 @@
                 &:before {
                     position: absolute;
                     content: "";
-                    left: 0;
+                    left: 24px;
                     top: 0;
-                    width: 100%;
+                    width: calc(100% - 48px);
                     height: 0.5px;
                     opacity: 0.5;
                     background-color: $white;
@@ -130,6 +130,8 @@
         }
 
         h1 {
+            line-height: 0.875;
+
             @media (min-width: 1025px) {
                 @include adaptive-value("font-size", 86, 38, 1);
             }

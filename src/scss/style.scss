@@ -25,26 +25,27 @@
 // load footer
 // @import "common/menu";
 
+// load popup
+@import "common/popup";
+
+// load form
+@import "common/form";
+
+
 // load side fixed
-@import "common/side-fixed";
+// @import "common/side-fixed";
 
 // load accordeon
-@import "common/accordeon";
+// @import "common/accordeon";
 
 // load error 404
 @import "common/404";
-
-// load to top
-@import "common/to-top";
 
 // load ticker
 @import "common/ticker";
 
 // load animations
 @import "common/animations";
-
-// load question
-@import "common/question";
 
 // load hero
 @import "parts/hero";
@@ -57,4 +58,3 @@
 
 // load card
 @import "parts/card";
- 
