@@ -271,9 +271,12 @@ sup {
 
 ._underline {
     position: relative;
+    transition: all 0.3s ease 0s;
 
     @media (any-hover: hover) {
         &:hover {
+            color: #7b8c84;
+            
             &:before {
                 max-width: 100%;
             }

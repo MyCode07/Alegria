@@ -65,6 +65,23 @@
         textarea {
             height: 63px;
         }
+
+        .wpcf7-response-output {
+            display: none !important;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &.invalid {
+            .wpcf7-validates-as-required {
+                color: #e5351d;
+
+                &::placeholder {
+                    color: #e5351d;
+                }
+            }
+        }
     }
 
     // .form-fields
@@ -129,6 +146,48 @@
                 height: 100%;
                 cursor: pointer;
             }
+        }
+    }
+
+    // .form-output
+
+    &-output {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        z-index: 160;
+        display: none;
+
+        // .form-output__body
+
+        &__body {
+            border-radius: 6px 6px 0 0;
+            padding: 12px;
+        }
+
+        span {
+            font-size: 13px;
+            line-height: 1.75;
+            font-weight: 300;
+            display: block;
+        }
+
+        &._active {
+            display: block;
+        }
+
+        &._error .form-output__body {
+            background-color: #e5351d;
+        }
+
+        &._sent .form-output__body {
+            background-color: $green;
+        }
+
+        &._requiered .form-output__body {
+            background-color: #e5351d;
         }
     }
 }

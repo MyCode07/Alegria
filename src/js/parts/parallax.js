@@ -22,8 +22,6 @@ const setTicky = () => {
     if (!villaContent || window.innerWidth < 1024) return;
     const top = window.innerHeight - villaContent.getBoundingClientRect().height;
 
-    console.log(top);
-
     if (top < 0) villaContent.style.top = top - 60 + 'px'
 }
 

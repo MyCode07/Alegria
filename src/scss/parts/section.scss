@@ -1886,6 +1886,39 @@
                 line-height: 1.75;
             }
         }
+
+        .content {
+            p {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 1.75;
+                letter-spacing: normal;
+            }
+
+            h2 {
+                margin-top: 42px;
+                margin-bottom: 23px;
+                color: $gray;
+                font-weight: 500;
+                line-height: 1.2;
+
+                @media (max-width: 600px) {
+                    margin-top: 50px;
+                }
+
+                & > :not(:last-child) {
+                    margin-top: 28px;
+                }
+            }
+
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.41;
+                margin-bottom: 17px;
+                margin-top: 23px;
+            }
+        }
     }
 
     // .villa__price
