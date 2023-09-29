@@ -1970,3 +1970,73 @@ body.single {
         display: none;
     }
 }
+
+.section._text {
+    padding: 100px 0;
+
+    h1 {
+        color: $green;
+        line-height: 0.875;
+        @include adaptive-value("margin-bottom", 50, 30, 1);
+
+        @media (min-width: 1025px) {
+            @include adaptive-value("font-size", 86, 38, 1);
+        }
+
+        @media (max-width: 1024px) and (min-width: 601px) {
+            @include adaptive-value("font-size", 86, 60, 1);
+        }
+
+        @media (max-width: 600px) {
+            @include adaptive-value("font-size", 86, 38, 1);
+        }
+
+        span {
+            font-size: 22px;
+            display: block;
+            letter-spacing: -0.04em;
+            color: $gray;
+            margin-top: 7px;
+        }
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 40px;
+        }
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    ol,
+    ul,
+    li {
+        list-style: inherit;
+        margin-bottom: 20px;
+    }
+
+    ol,
+    ul {
+        @include adaptive-value("padding-left", 10, 7, 1);
+        @include adaptive-value("margin-left", 10, 7, 1);
+    }
+}
