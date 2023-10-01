@@ -4,8 +4,9 @@ const parallax = elements => {
 
     elements.forEach(element => {
         let y = window.innerHeight - element.getBoundingClientRect().top
+        let parallax = +element.dataset.parallax ? +element.dataset.parallax : -0.1;
         if (y > 0) {
-            element.style.top = -0.1 * y + 'px';
+            element.style.top = parallax * y + 'px';
         }
     })
 }
