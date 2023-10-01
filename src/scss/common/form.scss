@@ -74,13 +74,6 @@
         }
 
         &.invalid {
-            .wpcf7-validates-as-required {
-                color: #e5351d;
-
-                &::placeholder {
-                    color: #e5351d;
-                }
-            }
         }
     }
 

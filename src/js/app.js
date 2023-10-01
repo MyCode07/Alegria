@@ -3,7 +3,6 @@ import "./parts/map.js";
 import "./parts/popup.js";
 import "./parts/header.js";
 import "./parts/parallax.js";
-import "./static/inputmask.js";
 
 import { runTicker } from "./static/ticker.js";
 import { replaceDomElements } from "./static/replace.js";
